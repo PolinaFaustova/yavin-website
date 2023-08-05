@@ -1,5 +1,5 @@
 .xl-text {
-  font-style: 75px;
+  font-size: 75px;
 }
 
 .btn-outline-secondary {
@@ -67,8 +67,10 @@
   transition: all 0.5s ease-in-out;
 }
 
-.to-top-btn:hover {
-  background-color: #1d1d21;
+.to-top-btn {
+  &:hover {
+    background-color: #1d1d21;
+  }
 }
 
 .to-top-btn {
@@ -84,7 +86,7 @@
 
 @media (max-width: 992px) {
   .xl-text {
-    font-style: 50px;
+    font-size: 50px;
   }
 
   .navbar {
@@ -113,7 +115,7 @@
   }
 
   .services .col-md-4 {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px #ccc solid;
     margin: 10px 0;
   }
 
@@ -124,7 +126,4 @@
   .details-2 .decoration-star {
     top: 300px;
   }
-}
-
-@media (max-width: 576px) {
 }
